@@ -263,43 +263,9 @@ Output:
 This is how you make expanding blocks.
 {{< /expand >}}
 
-### Excerpts
+### Embedded partials
 
-**Defining an excerpt**
-
-Syntax:
-
-```md
-{{</* excerpt */>}}The Redis OSS Cluster API support in Redis Enterprise Software (RS)
-provides a simple mechanism for cluster-aware Redis clients to learn
-and know the cluster topology. This enables clients to connect directly
-to an RS proxy on the node hosting the master shard for the data being
-operated on.{{</* /excerpt */>}}
-```
-
-Output:
-
-{{< excerpt >}}The Redis OSS Cluster API support in Redis Enterprise Software (RS)
-provides a simple mechanism for cluster-aware Redis clients to learn
-and know the cluster topology. This enables clients to connect directly
-to an RS proxy on the node hosting the master shard for the data being
-operated on.{{< /excerpt >}}
-
-**Including an excerpt**
-
-Syntax:
-
-```src
-{{</* excerpt-include filename="rs/concepts/data-access/oss-cluster-api.md" */>}}
-```
-
-Output:
-
-{{< excerpt-include filename="rs/concepts/data-access/oss-cluster-api.md" />}}
-
-**Embedding a partial**
-
-A partial markdown or HTML file can be included in other files using the **embed-md** or **embed-html** shortcodes. Partials should be placed in `content/embeds` directory.
+A partial markdown or HTML file can be included in other files using the **embed-md** or **embed-html** shortcodes. Partials must be placed in `content/embeds` directory.
 
 Embed a markdown partial
 
@@ -318,12 +284,50 @@ Embed an HTML partial
 Syntax:
 
 ```src
-{{</* embed-html "sample.html" */>}}
+{{</* embed-html "sample-table.html" */>}}
 ```
 
 Output:
 
 {{< embed-html "sample.html" >}}
+
+### Excerpts
+
+{{% warning %}}
+In most cases, use embedded partials instead of excerpts.
+{{% /warning %}}
+
+**Defining an excerpt**
+
+Syntax:
+
+```md
+{{%/* excerpt */%}}The Redis OSS Cluster API support in Redis Enterprise Software (RS)
+provides a simple mechanism for cluster-aware Redis clients to learn
+and know the cluster topology. This enables clients to connect directly
+to an RS proxy on the node hosting the master shard for the data being
+operated on.{{%/* /excerpt */%}}
+```
+
+Output:
+
+{{% excerpt %}}The Redis OSS Cluster API support in Redis Enterprise Software (RS)
+provides a simple mechanism for cluster-aware Redis clients to learn
+and know the cluster topology. This enables clients to connect directly
+to an RS proxy on the node hosting the master shard for the data being
+operated on.{{% /excerpt %}}
+
+**Including an excerpt**
+
+Syntax:
+
+```src
+{{%/* excerpt-include filename="rs/concepts/data-access/oss-cluster-api.md" */%}}
+```
+
+Output:
+
+{{%excerpt-include filename="rs/concepts/data-access/oss-cluster-api.md" %}}
 
 ## Informative Notices
 
@@ -430,6 +434,7 @@ Ouput:
 See example [here](/rc/administration).
 
 ### Recently updated
+
 This shortcode can be used to display recently updated articles.
 
 Syntax:

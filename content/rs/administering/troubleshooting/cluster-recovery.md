@@ -47,7 +47,7 @@ The cluster recovery process includes:
 
 1. (Optional) If you want to recover the cluster to the original cluster nodes, uninstall RS from the nodes.
 
-1. Install [RS]({{< relref "/rs/installing-upgrading/downloading-installing.md" >}}) on the new cluster nodes.
+1. Install [RS]({{< relref "/rs/installing-upgrading/_index.md" >}}) on the new cluster nodes.
 
     Do not configure the cluster nodes (`rladmin cluster create` in the CLI or **Setup** in the Web UI).
 
@@ -56,6 +56,7 @@ The cluster recovery process includes:
     - The same number of nodes
     - At least the same amount of memory
     - The same RS version
+    - The same installation user and paths
 
     {{% note %}}
 The cluster recovery can fail if these requirements are not met.
