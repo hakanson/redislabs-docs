@@ -9,7 +9,9 @@ Here are some frequently asked questions about Redis Enterprise on integration p
 
 ## RS on Kubernetes
 
-{{< expand "What is an Operator?" >}}
+{{< expand-control >}}
+
+{{%expand "What is an Operator?" %}}
 An Operator is a [Kubernetes custom controller]( https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources#custom-controllers) which extends the native K8s API. Please refer to the article [Redis Enterprise K8s Operator-based deployments – Overview]({{< relref "/platforms/kubernetes/kubernetes-with-operator.md" >}}).
 {{< /expand >}}
 
@@ -240,5 +242,6 @@ and allows that account to create pods with the PSP shown above.
     - The NET_RAW capability requirement in PSP was removed.
     - The allowPrivilegeEscalation is set to 'false' by default.
 {{< /note >}}
+{{% /expand%}}
 
-{{< /expand >}}
+{{< /expand-control >}}

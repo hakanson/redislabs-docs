@@ -9,7 +9,9 @@ Here are some frequently asked questions about Redis Enterprise Software.
 
 ## General
 
-{{< expand "What is RedisInsight?" >}}
+{{< expand-control >}}
+
+{{% expand "What is RedisInsight?" %}}
 RedisInsight is a browser based GUI for Redis. It lets you do the following -
 
 - Browse
@@ -46,6 +48,8 @@ Yes, RedisInsight is fully compatible with Redis Labs Enterprise version.
 {{< expand "What cloud providers do you support?" >}}
 We support Redis Cloud, Redis Cloud Pro, AWS Elasticache and Azure Redis Cache. That said, RedisInsight should work with any cloud provider as long as you run it on a host that has network access to your cloud based redis server. Send us an email at redisinsight@redislabs.com if you would like to use RedisInsight on a cloud provider that we haven't listed.
 {{< /expand >}}
+
+{{< /expand-control >}}
 
 ## Memory Analysis
 
@@ -85,6 +89,8 @@ Key pattern is a grouping of related keys, for example users:*. RedisInsight can
 We assume that you use colon as a separator. If you use a non-standard separator, you have to add key patterns manually.
 {{< /expand >}}
 
+{{< /expand-control >}}
+
 ## Connecting to Redis
 
 {{< expand "How do I connect to redis-server running on localhost?" >}}
@@ -98,6 +104,8 @@ You must install RedisInsight inside your VPC, either on an EC2 instance, or usi
 {{< expand "What are the memory limits on your license terms?" >}}
 Our licensing works on the sum of used memory on the redis instances you have added to RedisInsight. So if your license allows 15GB, you can add 5 redis instances using 3 GB RAM, or 1 redis server using 15 GB.
 {{< /expand >}}
+
+{{< /expand-control >}}
 
 ## License and Support
 
@@ -113,6 +121,8 @@ Once you buy a license, you can use RedisInsight forever as long as you are with
 Once you complete payment, you receive an email with your license key.
 {{< /expand >}}
 
+{{< /expand-control >}}
+
 ## Privacy and Security
 
 {{< expand "Who has access to my redis servers?" >}}
@@ -125,4 +135,6 @@ We recommend installing HTTPS, whitelisting IP addresses that have access to Red
 
 {{< expand "What information do you collect about my installation?" >}}
 We use google analytics so that we can understand how customers use the software. Per google analytics terms and conditions, we do not track any personally identifiable information.
-{{< /expand >}}
+{{% /expand %}}
+
+{{< /expand-control >}}

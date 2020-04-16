@@ -9,6 +9,7 @@ Here are some frequently asked questions about Redis Enterprise Software.
 
 ## Features and Terminology
 
+{{< expand-control >}}
 <!-- Also in RC -->
 {{< expand "What exactly is Redis Enterprise?" >}}
 {{< embed-md "what-is-redis-enterprise.md"  >}}
@@ -80,4 +81,6 @@ You can set the **maxmemory** value of each Redis Enterprise Software databas
 the management UI using the **Memory limit** property, as well as
 configure an eviction policy by setting it to any of the standard Redis
 behaviors, without interrupting database operations.
-{{< /expand>}}
+{{% /expand%}}
+
+{{< /expand-control >}}
