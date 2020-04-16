@@ -241,7 +241,6 @@ and allows that account to create pods with the PSP shown above.
     - The NET_RAW capability requirement in PSP was removed.
     - The allowPrivilegeEscalation is set to 'false' by default.
 {{< /note >}}
-
 {{% /expand%}}
 
 {{< /expand-control >}}
