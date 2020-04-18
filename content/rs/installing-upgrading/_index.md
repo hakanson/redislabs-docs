@@ -13,7 +13,7 @@ In addition to Linux operating systems (Ubuntu, RHEL/CentOS, Oracle Linux), you 
 - [Amazon AWS AMI]({{< relref "configuring-aws-instances.md" >}})
 - [Docker container]({{< relref "/rs/getting-started/docker/getting-started-docker.md" >}}) (for development and testing only)
 - [Pivotal Cloud Foundry]({{ relref "/platforms/pcf/using-pcf.md" }})
-- [Kubernetes]({{< relref "/platforms/kubernetes/_index.md.md" >}})
+- [Kubernetes]({{< relref "/platforms/kubernetes/_index.md" >}})
 
 To access the installation package for any of these platforms:
 
@@ -87,11 +87,7 @@ To install RS on Linux from the CLI:
     ```src
     sudo ./install.sh
     ```
-
-    {{% note %}}
-You must either be logged in as the root user or use `sudo` to run the install process.
-    {{% /note %}}
-
+    
 1. Answer the [installation questions](#installation-questions) when shown to complete the installation process,
     including the `rlcheck` installation verification.
 
