@@ -51,8 +51,6 @@ We support Redis Cloud, Redis Cloud Pro, AWS Elasticache and Azure Redis Cache. 
 
 {{< /expand-control >}}
 
-{{< /expand-control >}}
-
 ## Memory Analysis
 
 {{< expand-control >}}
@@ -94,8 +92,6 @@ We assume that you use colon as a separator. If you use a non-standard separator
 
 {{< /expand-control >}}
 
-{{< /expand-control >}}
-
 ## Connecting to Redis
 
 {{< expand-control >}}
@@ -114,8 +110,6 @@ Our licensing works on the sum of used memory on the redis instances you have ad
 
 {{< /expand-control >}}
 
-{{< /expand-control >}}
-
 ## License and Support
 
 {{< expand-control >}}
@@ -131,8 +125,6 @@ Once you buy a license, you can use RedisInsight forever as long as you are with
 {{% expand "How do I get my license key?" %}}
 Once you complete payment, you receive an email with your license key.
 {{% /expand %}}
-
-{{< /expand-control >}}
 
 {{< /expand-control >}}
 
