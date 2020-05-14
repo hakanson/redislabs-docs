@@ -11,7 +11,7 @@ You can also enable alerts for the cluster and nodes in the [cluster alerts]]({{
 
 Configured alerts are shown:
 
-- As a warning indicator (![Warning](/images/rs/icon_warning.png#no-click "Warning") for the database
+- As a warning icon (![Warning](/images/rs/icon_warning.png#no-click "Warning") for the database
 - In the **log**
 - In emails, if you configure email alerts
 
@@ -23,4 +23,4 @@ To enable alerts for a database:
 To enable alert emails:
 
 1. Configure the [email server settings]({{< relref "/rs/administering/cluster-operations/settings/_index.md" >}})).
-2. In **settings** > **team**, select for each user [the database and cluster alerts]({{< relref "/rs/administering/designing-production/security/account-management.md" >}}) that the user receives.
+2. In **access control**, select for each user [the database and cluster alerts]({{< relref "/rs/administering/designing-production/access-control/_index.md" >}}) that the user receives.
